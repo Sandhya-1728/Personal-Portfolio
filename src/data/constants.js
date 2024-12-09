@@ -259,14 +259,13 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-    role: "Frontend Engineer Intern",
-    company: "Neurobit",
-    date: "June 2023 - Nov 2023",
-    desc: "Enhanced user experiences on Neurobit PSG & Hybrid, Portals by resolving bugs & reduced load time by 40%. Built Neurobit Analytics portal using React Js with seamless interaction of REST APIs using AXIOS optimized with React Query. Refactored previous code to TypeScript, updated with new dependency and integrated Vite with Jest for Unit Testing.",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS95Z4YVYbM6SAVHtlkuUqaFnyVFoQG54p-7A&s",
+    role: "Front-End Development Intern",
+    company: "Infosys Springboard",
+    date: "Jan 2023 - May 2023",
+    desc: "Designed a responsive e-learning platform with gamification features, enhancing engagement for students from Class I to XII. Optimized front-end performance using advanced SEO techniques, reducing page load times by 40%, and inte-grated interactive visualizations.",
     skills: [
       "ReactJS",
-      "Redux",
       "NodeJs",
       "Material UI",
       "HTML",
