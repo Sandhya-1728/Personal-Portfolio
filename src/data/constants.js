@@ -377,15 +377,15 @@ export const projects = [
     title: "Task Tracker ",
     date: "May 2024 - Jun 2024",
     description:
-      "A Rule Builder application “Decision Hub” that empowers Business Analysts to create, save, and visualize decision strategies. Provide a no-code rule writing experience and visual representation to test these rules in real-time and observe the calculations at each step.",
+      "Developed a dynamic and interactive Task Tracker web application using React.js, designed to streamline task management. The application enables users to add, update, delete, and organize tasks efficiently. Key features include task categorization, deadline notifications, and a responsive design optimized for various devices. The project demonstrates proficiency in React.js, state management, and front-end development, emphasizing a user-friendly and scalable solution.",
     image:
       "/",
     tags: [
       "React Js",
-      "PostgressSQL",
+      "JavaScript (ES6+)",
       "Node Js",
-      "Express Js",
-      "Redux",
+      "Context API",
+      "React Hooks",
       "React Flow",
     ],
     category: "web app",
@@ -397,21 +397,16 @@ export const projects = [
     title: "Product - Catalog",
     date: "May 2024 - Jun 2024",
     description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
+      "Developed an intuitive web application using React.js to simplify product browsing and enhance user engagement. This platform allows users to explore a diverse range of products with features like advanced search, category-based filtering, and responsive layouts for an optimal viewing experience on any device. The application focuses on delivering a seamless interface for efficient product discovery while leveraging modern front-end technologies. It emphasizes clean design, scalability, and robust functionality to meet diverse user needs.",
     image:
       "/",
     tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
+      "React.js",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
       "Node Js",
-      "Express Js",
-      "Redux",
+      "MYSQL",
     ],
     category: "web app",
     github: "/",
@@ -422,10 +417,10 @@ export const projects = [
     title: "Weather - App",
     date: "Feb 2024 - Apr 2024",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Developed a basic Weather App using HTML, CSS, and JavaScript, designed to provide real-time weather updates. This application fetches weather data from the OpenWeatherMap API, allowing users to view current temperature, weather conditions, and location-specific forecasts. The app features a simple, responsive interface and enables users to search for weather details by city. This project demonstrates foundational skills in web development, API integration, and responsive design.",
     image:
       "/",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    tags: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API", "GitHub"],
     category: "web app",
     github: "/",
     webapp: "/",
@@ -449,16 +444,16 @@ export const projects = [
     title: "IPL - Winning - Team Prediction",
     date: "Feb 2024",
     description:
-      "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
+      "Developed an machine learning project to forecast the potential winners of the Indian Premier League (IPL) based on historical and current season data. The project leverages supervised learning techniques to analyze factors such as team performance, player statistics, and match conditions. The model provides insights and predictions with a focus on accuracy and usability.",
     image:
       "/",
     tags: [
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-      "NodeMailer",
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "Seaborn",
+      "Matplotlib",
+      "Python",
     ],
     category: "machine learning",
     github: "/",
@@ -469,10 +464,10 @@ export const projects = [
     title: "Doc-Chain TrustShield: Transforming Verification Through Blockchain Brilliance",
     date: "Jan 2024 - Mar 2024",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+      "Spearheaded the development of a cutting-edge document verification system leveraging blockchain technology. Showcased adeptness in crafting secure and efficient solutions to authenticate documents seamlessly.",
     image:
       "/",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    tags: ["Ethereum", "Solidity", "JavaScript", "Python", "React"],
     category: "blockchain",
     github: "/",
     webapp: "/",
@@ -496,10 +491,10 @@ export const projects = [
     title: "Diabetes Prediction using SVM",
     date: "Jan 2024",
     description:
-      "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
+      "Developed a machine learning model to predict the likelihood of diabetes in individuals based on clinical and demographic data. The project leverages the Support Vector Machine (SVM) algorithm for binary classification, offering accurate predictions and assisting in early diagnosis. By analyzing factors such as glucose level, BMI, age, and blood pressure, the model provides valuable insights for healthcare professionals to identify at-risk individuals.",
     image:
       "/",
-    tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
+    tags: ["GridSearchCV", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
     category: "machine learning",
     github: "/",
     webapp: "/",
@@ -509,10 +504,10 @@ export const projects = [
     title: "Decentralized Crowdfunding Platform",
     date: "May 2023 - Sep 2023",
     description:
-      "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
+      "Developed a blockchain-based crowdfunding platform with Ethereum smart contracts, enabling secure transactions and tamper-proof records. Built a user-friendly interface using Angular and Web3.js, integrated with Metamask for decentralized governance and seamless interaction.",
     image:
       "/",
-    tags: ["React Native", "JavaScript", "Axios"],
+    tags: ["React Native", "JavaScript", "Web3.js", "Ethereum", "Solidity"],
     category: "blockchain",
     github: "/",
     webapp: "/",
@@ -522,10 +517,10 @@ export const projects = [
     title: "EdgeLinkSim - Intelligent Resource",
     date: "Dec 2022 - Mar 2023",
     description:
-      "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
+      "Developed a framework to optimize resource allocation and workload distribution between edge devices and cloud servers, reducing latency by 30%. Implemented fault-tolerant mechanisms to enhance system reliability by 20% in hybrid environments.",
     image:
       "/",
-    tags: ["React Js", "Firebase", "Firestore", "Node JS"],
+    tags: ["React Js", "Firebase", "Firestore", "Node JS", "CloudSim", "SimPy", "Java"],
     category: "web app",
     github: "/",
     webapp: "/",
@@ -535,10 +530,10 @@ export const projects = [
     title: "Taxi Booking System - Java",
     date: "Aug 2022 - Oct 2022",
     description:
-      " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
+      "Developed a Taxi Booking System using Java to streamline the process of booking taxis and managing rides efficiently. The application enables users to book taxis, track ride details, and manage payments through a simple and intuitive interface. It incorporates features like real-time taxi availability, fare calculation, and user management, ensuring a smooth and reliable experience for both passengers and drivers.",
     image:
       "/",
-    tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
+    tags: ["React Js", "MySQL", "Java", "Node JS", "Swing"],
     category: "web app",
     github: "/",
     webapp: "/",
@@ -548,10 +543,10 @@ export const projects = [
     title: "Simple Calculator",
     date: "Nov 2022",
     description:
-      "A simple react app that shows the characters of the famous TV series Breaking Bad. It uses the Breaking Bad API to fetch the data. It also has a search bar to search for a particular character.",
+      "A Simple Calculator using HTML, CSS, and JavaScript with added animations for a visually engaging user experience. The calculator performs basic arithmetic operations, including addition, subtraction, multiplication, and division. It features an intuitive interface and smooth animations that enhance user interaction, making calculations more enjoyable.",
     image:
       "/",
-    tags: ["React Js", "API", "Axios", "Node JS"],
+    tags: ["HTML", "CSS", "JavaScript"],
     category: "web app",
     github: "/",
     webapp: "/",
@@ -561,10 +556,10 @@ export const projects = [
     title: "Sign Language Detection",
     date: "Feb 2022 - Apr 2022",
     description:
-      "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
+      "Engineered a groundbreaking Sign Language Detection system using Python AI. Created a bridge of communication for the hearing-impaired, making technology inclusive.",
     image:
       "/",
-    tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
+    tags: ["TensorFlow", "PyTorch", "Pandas", "NumPy", "Scikit-learn"],
     category: "machine learning",
     github: "/",
     webapp: "/",
@@ -574,10 +569,10 @@ export const projects = [
     title: "Contact Management System",
     date: "Sep 2021",
     description:
-      "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
+      "Developed a Contact Management System in C, designed to efficiently store, retrieve, and manage contact information. This console-based application allows users to perform operations like adding, searching, updating, and deleting contacts while ensuring a simple and intuitive user experience. The system utilizes file handling to persistently store contact details for long-term use.",
     image:
       "/",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    tags: ["arrays", "pointers", "structures"],
     category: "web app",
     github: "/",
     webapp: "/",
