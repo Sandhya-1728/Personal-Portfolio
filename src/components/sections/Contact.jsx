@@ -1,53 +1,46 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import emailjs from "@emailjs/browser";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-contnet: center;
-  position: rlative;
-  z-index: 1;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 `;
 
 const Wrapper = styled.div`
   position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 1100px;
+  max-width: 600px;
   gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
 `;
+
 const Title = styled.div`
   font-size: 52px;
   text-align: center;
   font-weight: 600;
   margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary || "#000"};
   @media (max-width: 768px) {
-    margin-top: 12px;
     font-size: 32px;
   }
 `;
+
 const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
+  color: ${({ theme }) => theme.text_secondary || "#555"};
+  margin-bottom: 20px;
 `;
 
-const ContactForm = styled.div`
-  width: 95%;
-  max-width: 600px;
+const ContactForm = styled.form`
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgba(17, 25, 40, 0.83);
@@ -55,95 +48,114 @@ const ContactForm = styled.div`
   padding: 32px;
   border-radius: 12px;
   box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
-  margin-top: 28px;
   gap: 12px;
 `;
-const ContactTitle = styled.div`
-  font-size: 28px;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
-`;
+
 const ContactInput = styled.input`
   flex: 1;
   background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary + 50};
+  border: 1px solid ${({ theme }) => theme.text_secondary + "50" || "#ccc"};
   outline: none;
   font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary || "#000"};
   border-radius: 12px;
   padding: 12px 16px;
   &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
+    border: 1px solid ${({ theme }) => theme.primary || "#007bff"};
   }
 `;
+
 const ContactInputMessage = styled.textarea`
   flex: 1;
   background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary + 50};
+  border: 1px solid ${({ theme }) => theme.text_secondary + "50" || "#ccc"};
   outline: none;
   font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary || "#000"};
   border-radius: 12px;
   padding: 12px 16px;
   &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
+    border: 1px solid ${({ theme }) => theme.primary || "#007bff"};
   }
 `;
-const ContactButton = styled.input`
+
+const ContactButton = styled.button`
   width: 100%;
-  text-decoration: none;
-  text-align: center;
   background: hsla(271, 100%, 50%, 1);
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
   border: none;
-  color: ${({ theme }) => theme.text_primary};
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  &:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+`;
+
+const FeedbackMessage = styled.div`
+  font-size: 16px;
+  font-weight: 600;
+  color: ${({ success }) => (success ? "green" : "red")};
 `;
 
 const Contact = () => {
-  const form = useRef();
-  const handelSubmit = (e) => {
+  const [formState, setFormState] = useState(""); // success or error
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const onSubmit = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
-        form.current,
-        "SybVGsYS52j2TfLbi"
-      )
-      .then(
-        (result) => {
-          alert("Message Sent");
-          form.current.result();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.target);
+
+    formData.append("access_key", "3acd02cd-40d4-4da2-b073-11678b4ca605"); 
+    formData.append("subject", "⚠️🛑A New Message from your Portfolio"); 
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        (error) => {
-          alert(error);
-        }
-      );
+        body: json,
+      }).then((res) => res.json());
+
+      if (res.success) {
+        setFormState("success");
+        e.target.reset(); // Reset the form on success
+      } else {
+        setFormState("error");
+      }
+    } catch (error) {
+      setFormState("error");
+    }
+
+    setIsSubmitting(false);
   };
+
   return (
-    <Container id="Education">
+    <Container>
       <Wrapper>
         <Title>Contact</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
-          Feel free to reach out to me for any questions or opportunities!
-        </Desc>
-        <ContactForm onSubmit={handelSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
-          <ContactButton type="submit" value="Send" />
+        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+        <ContactForm onSubmit={onSubmit}>
+          <ContactInput type="text" name="name" placeholder="Your Name" required />
+          <ContactInput type="email" name="email" placeholder="Your Email" required />
+          <ContactInputMessage name="message" placeholder="Message" rows="4" required />
+          <ContactButton type="submit" disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Submit"}
+          </ContactButton>
         </ContactForm>
+        {formState === "success" && <FeedbackMessage success={true}>Message sent successfully!</FeedbackMessage>}
+        {formState === "error" && <FeedbackMessage success={false}>Failed to send message. Please try again.</FeedbackMessage>}
       </Wrapper>
     </Container>
   );
