@@ -113,7 +113,7 @@ const Contact = () => {
     const formData = new FormData(e.target);
 
     formData.append("access_key", "3acd02cd-40d4-4da2-b073-11678b4ca605"); 
-    formData.append("subject", "⚠️🛑A New Message from your Portfolio"); 
+    formData.append("subject", "⚠️A New Message from your Portfolio"); 
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -145,13 +145,13 @@ const Contact = () => {
     <Container>
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+        <Desc>Looking forward to building success together—let’s connect!</Desc>
         <ContactForm onSubmit={onSubmit}>
           <ContactInput type="text" name="name" placeholder="Your Name" required />
           <ContactInput type="email" name="email" placeholder="Your Email" required />
           <ContactInputMessage name="message" placeholder="Message" rows="4" required />
           <ContactButton type="submit" disabled={isSubmitting}>
-            {isSubmitting ? "Sending..." : "Submit"}
+            {isSubmitting ? "Sending..." : "Hire me!"}
           </ContactButton>
         </ContactForm>
         {formState === "success" && <FeedbackMessage success={true}>Message sent successfully!</FeedbackMessage>}
