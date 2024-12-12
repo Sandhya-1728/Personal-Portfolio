@@ -493,7 +493,7 @@ export const projects = [
     description:
       "Developed a machine learning model to predict the likelihood of diabetes in individuals based on clinical and demographic data. The project leverages the Support Vector Machine (SVM) algorithm for binary classification, offering accurate predictions and assisting in early diagnosis. By analyzing factors such as glucose level, BMI, age, and blood pressure, the model provides valuable insights for healthcare professionals to identify at-risk individuals.",
     image:
-      "/",
+      "https://cdn.analyticsvidhya.com/wp-content/uploads/2022/01/Diabetes-Prediction-Using-Machine-Learning.webp",
     tags: ["GridSearchCV", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
     category: "machine learning",
     github: "/",
@@ -506,7 +506,7 @@ export const projects = [
     description:
       "Developed a blockchain-based crowdfunding platform with Ethereum smart contracts, enabling secure transactions and tamper-proof records. Built a user-friendly interface using Angular and Web3.js, integrated with Metamask for decentralized governance and seamless interaction.",
     image:
-      "/",
+      "https://cdn.dribbble.com/users/2955535/screenshots/17227702/media/de70740cf1bde387741f39aa3d29903c.png?resize=400x300&vertical=center",
     tags: ["React Native", "JavaScript", "Web3.js", "Ethereum", "Solidity"],
     category: "blockchain",
     github: "/",
