@@ -389,7 +389,7 @@ export const projects = [
       "React Flow",
     ],
     category: "web app",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/CodSoft-ReactJs-Internship/tree/main/task-2%20Task%20Tracker/taskapp",
     webapp: "/",
   },
   {
@@ -409,7 +409,7 @@ export const projects = [
       "MYSQL",
     ],
     category: "web app",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/CodSoft-ReactJs-Internship/tree/main/Task4-Product-catalog",
     webapp: "/",
   },
   {
@@ -422,7 +422,7 @@ export const projects = [
       "data:image/jpeg;base64,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",
     tags: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API", "GitHub"],
     category: "web app",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/Weather-App",
     webapp: "/",
     // member: [
     //   {
@@ -456,7 +456,7 @@ export const projects = [
       "Python",
     ],
     category: "machine learning",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/IPL-Winning-Team-Prediction",
     webapp: "/",
   },
   {
@@ -469,7 +469,7 @@ export const projects = [
       "images/Doc-Chain.jpg",
     tags: ["Ethereum", "Solidity", "JavaScript", "Python", "React"],
     category: "blockchain",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/Doc-Chain",
     webapp: "/",
     // member: [
     //   {
@@ -496,7 +496,7 @@ export const projects = [
       "https://cdn.analyticsvidhya.com/wp-content/uploads/2022/01/Diabetes-Prediction-Using-Machine-Learning.webp",
     tags: ["GridSearchCV", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
     category: "machine learning",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/Diabetes-Prediction",
     webapp: "/",
   },
   {
@@ -532,10 +532,10 @@ export const projects = [
     description:
       "Developed a Taxi Booking System using Java to streamline the process of booking taxis and managing rides efficiently. The application enables users to book taxis, track ride details, and manage payments through a simple and intuitive interface. It incorporates features like real-time taxi availability, fare calculation, and user management, ensuring a smooth and reliable experience for both passengers and drivers.",
     image:
-      "/",
+      "https://copyassignment.com/wp-content/uploads/2022/12/taxi-output.jpg",
     tags: ["React Js", "MySQL", "Java", "Node JS", "Swing"],
     category: "web app",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/Taxi-Booking-System",
     webapp: "/",
   },
   {
@@ -548,7 +548,7 @@ export const projects = [
       "/",
     tags: ["HTML", "CSS", "JavaScript"],
     category: "web app",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/Simple-Calculator",
     webapp: "/",
   },
   {
@@ -558,7 +558,7 @@ export const projects = [
     description:
       "Engineered a groundbreaking Sign Language Detection system using Python AI. Created a bridge of communication for the hearing-impaired, making technology inclusive.",
     image:
-      "/",
+      "https://miro.medium.com/v2/resize:fit:337/0*6aEBXcTf3YxIOund.png",
     tags: ["TensorFlow", "PyTorch", "Pandas", "NumPy", "Scikit-learn"],
     category: "machine learning",
     github: "/",
@@ -571,10 +571,10 @@ export const projects = [
     description:
       "Developed a Contact Management System in C, designed to efficiently store, retrieve, and manage contact information. This console-based application allows users to perform operations like adding, searching, updating, and deleting contacts while ensuring a simple and intuitive user experience. The system utilizes file handling to persistently store contact details for long-term use.",
     image:
-      "/",
+      "https://www.hubspot.com/hs-fs/hubfs/assets/hubspot.com/web-team/WBZ/Feature%20Pages/contact-management/contact-management-hero-en.webp?width=1030&name=contact-management-hero-en.webp",
     tags: ["arrays", "pointers", "structures"],
     category: "web app",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/Contact-Management-System-in-C",
     webapp: "/",
   },
 ];
