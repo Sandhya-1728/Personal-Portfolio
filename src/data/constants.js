@@ -561,7 +561,7 @@ export const projects = [
       "https://miro.medium.com/v2/resize:fit:337/0*6aEBXcTf3YxIOund.png",
     tags: ["TensorFlow", "PyTorch", "Pandas", "NumPy", "Scikit-learn"],
     category: "machine learning",
-    github: "/",
+    github: "https://github.com/Sandhya-1728/Sign-Language-Detection",
     webapp: "/",
   },
   {
