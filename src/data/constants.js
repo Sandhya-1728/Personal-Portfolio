@@ -1,3 +1,6 @@
+import DocChainImage from '../images/Doc-Chain.jpg';
+import CalculatorImage from '../images/Calculator.png';
+import edgelinkImage from '../images/edgelink.png';
 export const Bio = {
   name: "Sandhya S",
   roles: [
@@ -466,7 +469,7 @@ export const projects = [
     description:
       "Spearheaded the development of a cutting-edge document verification system leveraging blockchain technology. Showcased adeptness in crafting secure and efficient solutions to authenticate documents seamlessly.",
     image:
-      "images/Doc-Chain.jpg",
+      DocChainImage,
     tags: ["Ethereum", "Solidity", "JavaScript", "Python", "React"],
     category: "blockchain",
     github: "https://github.com/Sandhya-1728/Doc-Chain",
@@ -519,7 +522,7 @@ export const projects = [
     description:
       "Developed a framework to optimize resource allocation and workload distribution between edge devices and cloud servers, reducing latency by 30%. Implemented fault-tolerant mechanisms to enhance system reliability by 20% in hybrid environments.",
     image:
-      "/",
+      edgelinkImage,
     tags: ["React Js", "Firebase", "Firestore", "Node JS", "CloudSim", "SimPy", "Java"],
     category: "web app",
     github: "/",
@@ -545,7 +548,7 @@ export const projects = [
     description:
       "A Simple Calculator using HTML, CSS, and JavaScript with added animations for a visually engaging user experience. The calculator performs basic arithmetic operations, including addition, subtraction, multiplication, and division. It features an intuitive interface and smooth animations that enhance user interaction, making calculations more enjoyable.",
     image:
-      "/",
+      CalculatorImage,
     tags: ["HTML", "CSS", "JavaScript"],
     category: "web app",
     github: "https://github.com/Sandhya-1728/Simple-Calculator",
