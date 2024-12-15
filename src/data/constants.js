@@ -1,6 +1,8 @@
 import DocChainImage from '../images/Doc-Chain.jpg';
 import CalculatorImage from '../images/Calculator.png';
 import edgelinkImage from '../images/edgelink.png';
+import schoolImage from '../images/littleoxfordLogo.jpg';
+
 export const Bio = {
   name: "Sandhya S",
   roles: [
@@ -356,7 +358,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://yt3.googleusercontent.com/s5uOnbHsyHH9h2fwAP0WpMQ1lDDw6KXNiHADmoc4GNc1O8u_-TuNY8IoKZmicGog5xwPMBxC=s160-c-k-c0x00ffffff-no-rj",
+    img: schoolImage,
     school: "Little Oxford Matric. Hr. Sec. School",
     date: "Jun 2019 - Apr 2020",
     grade: "78.3%",
